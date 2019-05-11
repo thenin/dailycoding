@@ -91,4 +91,5 @@ fabric.properties
 .idea/
 **/.idea/
 **/*.iml
-**/target                `
+**/target/
+                `
