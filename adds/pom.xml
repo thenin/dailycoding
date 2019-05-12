@@ -6,11 +6,34 @@
 
     <artifactId>adds</artifactId>
     <version>1.0-SNAPSHOT</version>
-<parent>
-    <groupId>org.thenin.dailycoding</groupId>
-    <artifactId>dailycoding-exercizes</artifactId>
-    <version>1.0-SNAPSHOT</version>
-</parent>
+    <parent>
+        <groupId>org.thenin.dailycoding</groupId>
+        <artifactId>dailycoding-exercizes</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefure.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <forkMode>never</forkMode>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

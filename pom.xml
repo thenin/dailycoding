@@ -9,6 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <properties>
+        <testng.version>6.11</testng.version>
+        <surefure.version>2.22.2</surefure.version>
+    </properties>
+
     <modules>
         <module>adds</module>
         <module>uber-array-multiples</module>
@@ -35,7 +40,12 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.11</version>
+            <version>${testng.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>${surefure.version}</version>
         </dependency>
     </dependencies>
 

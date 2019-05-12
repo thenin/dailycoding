@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="adds" verbose="3">
+    <test name="AddsTest">
+        <classes>
+            <class name="org.thenin.dailycoding.adds.test.AddsTest" />
+        </classes>
+    </test>
+</suite>

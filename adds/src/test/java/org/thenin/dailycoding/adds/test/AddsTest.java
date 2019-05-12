@@ -20,7 +20,7 @@ public class AddsTest {
         Assert.assertFalse(addsArray.checkSum(new int[]{10, -17, 8, 7, 19, 30},14));
     }
 
-    @Test(dataProvider="genData")
+ /*   @Test(dataProvider="genData")
     public static void testDataProvider(int[] values, int sum){
 
         Assert.assertTrue(addsArray.checkSum(values,sum));
@@ -47,5 +47,5 @@ public class AddsTest {
         log.debug(String.format("%d + %d = %d",tmp[first],tmp[second],sum));
         log.debug("Done prepare data.....");
         return new Object[][]{{tmp,sum}};
-    }
+    }*/
 }
