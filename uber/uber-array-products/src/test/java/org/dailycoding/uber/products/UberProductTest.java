@@ -10,6 +10,9 @@ import java.util.Arrays;
 
 import static org.dailycoding.uber.products.Solution.*;
 
+/**
+ *
+ */
 public class UberProductTest {
 
     private static Logger log = Logger.getLogger(UberProductTest.class);
@@ -26,13 +29,18 @@ public class UberProductTest {
         Assert.assertEquals(arrayMultiplesNoDivision(new long[]{1, 2, 3, 4, 5}), new long[]{120, 60, 40, 30, 24});
     }
 
+
+
     @Test
     public void testNoDivisionRightWay() {
         Assert.assertEquals(arrayMultiplesNoDivisionRightWay(new long[]{3, 2, 1}), new long[]{2, 3, 6});
         Assert.assertEquals(arrayMultiplesNoDivisionRightWay(new long[]{1, 2, 3, 4, 5}), new long[]{120, 60, 40, 30, 24});
     }
 
-
+    /**
+     * This was an attempt to compare performance between 3 solutions.
+     * Makes no sense, since even an inArray[100] of integer values between [1..2] will most likely overreach Long.MAX_VALUE (2^64)
+     */
     @Test(dataProvider = "genData")
     public void syntheticTest(long[] inArray, long[] multiples) {
         long startTime = System.currentTimeMillis();
@@ -54,6 +62,14 @@ public class UberProductTest {
         log.info(String.format("arrayMultiplesNoDivisionRightWay execution time: %d", elapsedTime));
     }
 
+    /**
+     * Provides test data - input and expected result to syntheticTest
+     * @param context TestSuit context from testng.xml. IN case any of the params is missing, defaults
+     *                testsNum - number of tests to run;
+     *                sizeMax - max size of an array;
+     *                valueMax - max value of an array element
+     * @return A set of test parameters - random tests number , random test array size, (at least 3), random
+     */
     @DataProvider
     public Object[][] genData(ITestContext context) {
         int testsNum = 5;
@@ -82,6 +98,11 @@ public class UberProductTest {
 
     }
 
+    /**
+     * Calculates expected result
+     * @param inArray inpur array
+     * @return array of multiples according to README.md
+     */
     private static long[] getMultiples(long[] inArray) {
         long[] result = new long[inArray.length];
 
@@ -95,6 +116,12 @@ public class UberProductTest {
         return result;
     }
 
+    /**
+     * Generates test subject
+     * @param size array size
+     * @param valueMax max value for an array element (above 0)
+     * @return test array
+     */
     private long[] genInArray(int size, long valueMax ) {
         long[] result = new long[size];
 

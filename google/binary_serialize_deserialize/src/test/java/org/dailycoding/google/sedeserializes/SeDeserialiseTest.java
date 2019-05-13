@@ -7,6 +7,9 @@ import static org.dailycoding.google.sedeserializes.SeDeserialiseSolution.*;
 
 public class SeDeserialiseTest {
 
+    /**
+     * Simple test from README.md
+     */
     @Test
     public void SerialiseTest(){
         SeDeserialiseSolution testItem = new SeDeserialiseSolution(

@@ -26,6 +26,11 @@ public class AddsTest {
         Assert.assertTrue(addsArray.checkSum(values,sum));
     }
 
+    /**
+     * Overcomplicated data provider, there's got to be a better way, but I am drunk already
+     * Creates a set of random unique integers, picks two random values from the set,
+     * provides the set as an input array and the sum of picked members as an expected result
+     */
     @DataProvider
     public Object[][] genData() {
         log.debug("Prepare data.....");

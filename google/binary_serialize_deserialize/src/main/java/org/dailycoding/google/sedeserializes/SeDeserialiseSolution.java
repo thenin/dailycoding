@@ -18,15 +18,18 @@ public class SeDeserialiseSolution {
     }
 
     static String doSrialise(SeDeserialiseSolution inClass){
+        // TODO implement serialize
         return "";
     }
 
     static SeDeserialiseSolution doDeserialise(String inString){
+        // TODO impement deserialize
         return new SeDeserialiseSolution();
     }
 
     @Override
     public boolean equals(Object o){
+        // TODO see if this works
         if (this == o)
             return true;
         if (o == null)

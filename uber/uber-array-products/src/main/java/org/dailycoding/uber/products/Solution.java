@@ -4,11 +4,19 @@ import org.testng.log4testng.Logger;
 
 import java.util.Arrays;
 
+/**
+ * see README.md
+ */
 class Solution {
 
     private static Logger log = Logger.getLogger(Solution.class);
 
 
+    /**
+     * @param inArray an array of integers
+     * @return an array of products element of inArray excluding the [i] element of an original array
+     * Lazy implementation using division
+     */
     static long[] arrayMultiplesWithDivision(long[] inArray){
         long[] result = new long[inArray.length];
 
@@ -22,6 +30,11 @@ class Solution {
         return result;
     }
 
+    /**
+     * @param inArray an array of integers
+     * @return an array of products element of inArray excluding the [i] element of an original array
+     * Brootforce noob implementation
+     */
     static long[] arrayMultiplesNoDivision(long[] inArray){
         long[] result = new long[inArray.length];
         for (int i=0;i<result.length;i++){
@@ -33,7 +46,11 @@ class Solution {
         log.debug(Arrays.toString(result));
         return result;
     }
-
+    /**
+     * @param inArray an array of integers
+     * @return an array of products element of inArray excluding the [i] element of an original array
+     * O(n) implementation
+     */
     static long[] arrayMultiplesNoDivisionRightWay(long[] inArray){
         long[] result = new long[inArray.length];
         long[] acc_result = new long[inArray.length];
