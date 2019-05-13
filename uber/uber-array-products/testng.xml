@@ -5,7 +5,7 @@
         <parameter name="sizeMax" value="10" />
         <parameter name="valueMax" value="10" />
         <classes>
-            <class name="org.dailycoding.uber.multiples.UberProductTest" />
+            <class name="org.dailycoding.uber.products.UberProductTest" />
         </classes>
     </test>
 </suite>

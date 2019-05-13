@@ -14,6 +14,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>uber-array-multiples</module>
+        <module>uber-array-products</module>
     </modules>
 </project>

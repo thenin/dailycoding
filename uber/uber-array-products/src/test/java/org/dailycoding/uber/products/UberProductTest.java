@@ -1,4 +1,4 @@
-package org.dailycoding.uber.multiples;
+package org.dailycoding.uber.products;
 
 import org.testng.Assert;
 import org.testng.ITestContext;
@@ -8,7 +8,7 @@ import org.testng.log4testng.Logger;
 
 import java.util.Arrays;
 
-import static org.dailycoding.uber.multiples.Solution.*;
+import static org.dailycoding.uber.products.Solution.*;
 
 public class UberProductTest {
 

@@ -1,4 +1,4 @@
-package org.dailycoding.uber.multiples;
+package org.dailycoding.uber.products;
 
 import org.testng.log4testng.Logger;
 
