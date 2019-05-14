@@ -19,8 +19,4 @@ The following test should pass:
 ```python
 node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
-```python
-
-We will be sending the solution tomorrow, along with tomorrow's question. As always, feel free to shoot us an email if there's anything we can help with.
-
-Have a great day!
+```
