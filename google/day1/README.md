@@ -1,6 +1,5 @@
 # dailycoding
-My Daily Coding Problems 
-May 10, 2019
+My Daily Coding Problems #1 May 10, 2019, [Google], [Easy]
 
 These are my attempts to solve coding problems provided by https://dailycodingproblem.com
 
