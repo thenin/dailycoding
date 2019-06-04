@@ -18,6 +18,7 @@
 
 
         <module>google</module>
+        <module>uber</module>
     </modules>
     <build>
         <plugins>
