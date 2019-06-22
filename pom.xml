@@ -19,6 +19,8 @@
 
         <module>google</module>
         <module>uber</module>
+        <module>Stripe</module>
+        <module>stripe</module>
     </modules>
     <build>
         <plugins>
