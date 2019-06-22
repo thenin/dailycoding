@@ -3,6 +3,8 @@ package org.thenin.dailycoding.google.day3;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static org.thenin.dailycoding.google.day3.Solution.validate;
+
 public class SimpleTest {
 
  //   @Test
@@ -27,6 +29,7 @@ public class SimpleTest {
                         null),
                 new Solution.Node("right", null, null));
         System.out.println("Start serialize");
-        System.out.println(Solution.serialize(node));
+        String test = Solution.serialize(node);
+        System.out.println(test);
     }
 }
